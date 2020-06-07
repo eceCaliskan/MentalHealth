@@ -1,0 +1,58 @@
+<style>
+    button{
+    padding-right: 100px;         /*SPACE TO THE RIGHT*/
+    padding-left: 50px;          /*SPACE TO THE LEFT*/
+    padding-top: 50px;         /*SPACE TO THE RIGHT*/
+    padding-bottom: 50px;          /*SPACE TO THE LEFT*/
+    background-color: purple;
+    margin-left: 10px;
+    color: white;
+    }
+
+    p{
+    color: white;
+    text-align: center;
+    }
+
+    table, th, td {
+        background-color: whitesmoke;
+        width: 20px;
+        margin-top: 0px;
+        padding-right: 80px;         /*SPACE TO THE RIGHT*/
+        padding-left: 100px;          /*SPACE TO THE LEFT*/
+        margin-left: 300px;
+    }
+
+    #f{
+        background-color: white;
+        float: right;
+    }
+
+    a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: purple;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+</style>
+<html> <!--starting the html-->
+<head><!--starting the head tag-->
+<?php require_once ("Views/template/header.phtml");?>
+</head><!--closing the head tag-->
+<script src="../search.js"></script>
+<body onLoad="loadDoc7()" id="tt">
+<div id="demo">
+   <p id="demo"></p>
+    <button type="button" id="button"  onclick="loadDoc()"><p>Users</p></button>
+    <table id="table" onclick="loadDoc2()"><!--the start of the table-->
+        <!--THE RESULTS FROM loadDoc will go here-->
+    </table><!--CLOSING THE TABLE-->
+</div>
+</body>
+</html>

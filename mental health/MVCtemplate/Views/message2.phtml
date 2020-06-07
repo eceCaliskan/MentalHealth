@@ -1,0 +1,79 @@
+<style>
+  p{
+      color: white;
+  }
+
+  table, th, td {
+      background-color: whitesmoke;
+      width: 45%;
+      padding-right: 480px;         /*SPACE TO THE RIGHT*/
+      padding-left: 300px;          /*SPACE TO THE LEFT*/
+      margin-left: 350px;
+      margin-bottom: 100px;
+  }
+
+  #send{
+      margin-top: 0px;
+      width: 75%;
+      margin-bottom: 60px;
+      margin-left: 320px;
+
+  }
+
+  #button1{
+        width: 1%;
+  }
+
+    #text{
+        background-color: white;
+    }
+
+    #post{
+        width: 19%;
+    }
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head><!--STARTING THE HEAD ELEMENT-->
+    <?php include "Views/template/header.phtml" ?>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/my-style.css" rel="stylesheet">
+    <title>MENTAL HEALTH <?php echo $view->pageTitle ?> </title><!--THE NAME OF THE PAGE-->
+</head><!--CLOSING THE HEAD ELEMENT-->
+<body onLoad="loadDoc2()" id="tt">
+<form name="form3" method="post" action="../index2.php" ><!--CREATING A NEW FORM-->
+    <input type="submit" name="recieve" value="HOME" />
+</form>
+<button type="button" id="button" onclick="loadDoc()">USERS</button>
+<table id="table" onclick="loadDoc2()"><!--creating tabe class called table-->
+</table>
+<div>
+<table id="table"> <!--the results will return here-->
+</table>
+    <div id="send">
+        <form name="form" method="post" action="" enctype="multipart/form-data" id="post1">
+          Text: <input type="text" name="text" id="text" onclick="loadDoc4()"/>
+            <input type="file" name="userfile" id="userfile" />
+            <!--FILE TO LET USER TO CHOOSE THE FILE-->
+        </form>
+        <p>PICTURE:<button id="button1" value="ok" onclick="loadDoc3(document.getElementById('text').value)"></button></p>
+        <!--IF THE PICTURE IS INCLUDED-->
+        <p>NO PICTURE: <button id="button1" value="ok" onclick="loadDoc6(document.getElementById('text').value)"></button></p>
+        <!--IF THE PICTURE IS NOT INCLUDED-->
+    </div>
+    <!--INPUT TEXT THEY WANT TO SEND-->
+<script src="../search.js"></script>
+</div>
+</body><!--CLOSING THE BODY-->
+</html><!--CLOSING THE HTML-->
+
+

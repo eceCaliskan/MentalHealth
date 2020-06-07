@@ -1,0 +1,48 @@
+<!--THIS PHTML FILE IS USED TO SHOW THE ELEMENTS ON THE WATCHLIST ON THE TABLE-->
+<?php require('template/header.phtml');?>
+<style>
+    table, th, td {   /* STYLING THE TABLE*/
+        border: 1px solid purple;    /*CREATING THE BORDER AROUND THE TABLE*/
+        border-collapse: separate;   /*SEPERATING THE BORDERS*/
+        text-align: left;            /*PUTTING THE TEXT ON THE RIF=GHT SIDE*/
+        background-color: white;/*SETTING THE BACKGROUND COLOR*/
+        padding-right: 80px;         /*SPACE TO THE RIGHT*/
+        padding-left: 80px;          /*SPACE TO THE LEFT*/
+        margin-left: 100px;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MENTAL HEALTH</title>  <!--TITLE OF THE PAGE-->
+</head>
+<body>
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" >  <!--CREATING A FORM-->
+           <div ><!--CREATING A DIV ELEMENT-->
+               <br>
+               <div class="table-responsive">
+                  <table class="a  col-lg-10">
+                       <h1>Watch-List</h1>   <!--Header called Watch-List-->
+                          <thead>    <!--Head of the table-->
+                            <tr><th>WatchList-ID</th><th>Post-ID</th><th>User-ID</th></tr><!--CREATING THE FIRST ROW WITH THREE COLUMNS-->
+                          </thead>
+                          <tbody>
+                              <?php foreach ($view->watchList as $watchList) {    // WHILE THERE ARE MORE ELEMENTS SHOW ALL THE DETAILS GIVEN
+                        echo '   <tr><td>' . $watchList->getWatchListID() . '</td>  <!--GETTING THE WATCHLIST ID-->
+                        <td><a href="../comment.php?post_id=' . $watchList->getPostID() . '"?link2>Post</a>' . $watchList->getPostId() . '</td>
+                        <!--GETTING THE POST ID CONNECTING TO A LINK WHEN USER PRESS THE LINK THEY CAN SEE THAT POST AND COMMENT-->
+                        <td>' . $watchList->getUserId() . '</td> <!--GETTING THE ID OF THE USER-->
+                        <td><a href="../watchlist.php?post_idm=' . $watchList->getPostId() . '"?link11> Delete from watchList</a></td>
+                        <!--A LINK WHICH HELPS USER TO REMOVE A POST FROM THEIR WATCHLIST--></tr>'; //CLOSING THE ROW
+                        }
+                        ?>
+                          </tbody> <!--CLOSING THE BODY OF TABLE-->
+                        </table> <!--CLOSING THE WHOLE TABLE-->
+                       </div>   <!--CLOSING THE DIV ELEMENT-->
+           </div>
+
+                    </form><!--CLOSING THE FORM-->
+</body> <!--CLOSING THE BODY-->

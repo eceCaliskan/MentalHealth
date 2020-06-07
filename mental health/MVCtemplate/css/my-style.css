@@ -1,0 +1,186 @@
+body{
+    background-color: black;
+}
+
+#title {
+    margin-top: 20px;
+    width:100%;
+    color: brown;
+    margin-left:0;
+
+
+
+}
+ .boxed1 {
+     width:10%;
+     float: right;
+     background-color: white;
+     padding-left: 10px;
+     padding-bottom: 10px;
+     padding-right:10px;
+ }
+
+
+h1 {
+    width:100%;
+    margin-top: 0px;
+    text-align: center;
+    color:white;
+    font-size: 500%;
+
+}
+
+.context {
+
+}
+
+#menu {
+    width:45%;
+    text-align: center;
+    border-top: solid 6px purple;
+    border-left: solid 6px purple;
+    border-right: solid 6px purple;
+    border-bottom: solid 6px purple;
+    color:	black;
+    height: 400px;
+    font-size: 150%;
+    float: left;
+    margin-right: 1px;
+    margin-left: 55px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+
+#menu2 {
+    width:45%;
+
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 55px;
+    border-top: solid 6px purple;
+    border-left: solid 6px purple;
+    border-right: solid 6px purple;
+    border-bottom: solid 6px purple;
+    color:	black;
+    height: 400px;
+    padding-top: 100px;
+    font-size: 130%;
+    float: right;
+background-color: white;
+}
+
+#menu3{
+    text-align: center;
+font-size: 150%;
+
+    border-top: solid 6px purple;
+    border-left: solid 6px purple;
+    border-right: solid 6px purple;
+    border-bottom: solid 6px purple;
+    height: 100px;
+    background-color: white;
+    margin-left:5%;
+    margin-right: auto;
+}
+
+
+#menu a {
+
+    color:purple ;
+    text-decoration: none;
+    display: block;
+    margin-top:100px;
+    text-align: center;
+    font-size: xx-large;
+
+
+}
+
+#menu a:hover {
+    background-color: purple;
+    color:white ;
+    text-decoration:underline;
+    display: block;
+}
+
+#content {
+
+    border-top: solid 6px brown;
+}
+
+
+#footer {
+    margin_top: 20px;
+    text-align: center;
+    background-color:antiquewhite ;
+    color: #8c8c8c;;
+}
+
+.links{
+  width: 50%;
+    float:right;
+
+    border-style: solid;
+    border-color: mediumpurple;
+}
+
+
+
+#nav {
+    color: purple;
+
+    display: block;
+}
+
+#nav2{
+
+    color: purple;
+    margin-top: 50px;
+
+    display: block;
+    width:100%;
+
+}
+
+#form1{
+    display: inline-block;
+    color: #9acfea;
+
+}
+
+#search1{
+    display: inline-block;
+    color: #9acfea;}
+
+#post1{
+    display: inline-block;
+}
+
+.container-fluid{
+    padding-top: 30px;
+width: 170%;
+
+    margin-top: 20px;
+    margin-left: 140px;
+}
+.container{
+    width: 100%;
+
+}
+
+.container2{
+    width: 90%;
+    height: 0%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 10px;
+
+}
+
+
+.container3{
+    width: 100%;
+margin-left: 20px;
+
+}

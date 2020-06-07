@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html><!--CREATING HTML-->
+<html lang="en">
+<head><!--OPENING HEAD ELEMENT-->
+    <head>
+        <?php include "Views/template/header.phtml" ?>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Bootstrap core CSS -->
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap theme -->
+        <link href="/css/bootstrap-theme.css" rel="stylesheet">
+        <link href="/css/my-style.css" rel="stylesheet">
+        <title>MENTAL HEALTH <?php echo $view->pageTitle ?> </title><!--THE NAME OF THE PAGE-->
+    </head><!--OPENING THE HEAD ELEMENT-->
+
+</head><!--CLOSING THE HEAD ELEMENT-->
+<body><!--OPENING BODY ELEMENT-->
+
+
+<div class="container-fluid">
+    <div id="menu" class="col-xs-1 col-sm-1 col-md-1">
+        <p><strong>Please enter your details below to register with the forum:</strong></p>
+    <div class="col-sm-12" ">
+
+
+            <form name="form" method="post" action="" ><!--CREATING A FORM-->
+                Name: <input type="text" name="user_name" /><!--INPUT FOR USER TO PUT THEIR NAME-->
+                E-mail: <input type="email" name="user_email"><!--INPUT FOR USER TO ENTER THEIR E-MAIL-->
+                Password: <input type="password" name="user_password"><!--INPUT FOR USER TO ENTER THEIR PASSWORD-->
+                <input type="submit" name="register" value="submit"><!--SUBMIT BUTTON TO SEND THE DETAILS-->
+
+    </div>
+</div>
+</body><!--CLOSING THE BODY ELEMENT-->
+</html><!--CLOSING THE HTML-->
+

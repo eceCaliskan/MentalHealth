@@ -1,0 +1,26 @@
+<style>
+    #post1{
+
+        background-color: white;
+        margin-left: 405px;
+        margin-top: 100px;
+    }
+</style>
+
+<!DOCTYPE html><!--CREATING HTML-->
+<?php require('template/header.phtml');?>
+<html lang="en">
+<head><!--OPENING HEAD ELEMENT-->
+    <title>MENTAL HEALTH</title><!--THE TITLE OF THE PAGE-->
+</head><!--CLOSING THE HEAD ELEMENT-->
+<body><!--OPENING BODY ELEMENT-->
+<form name="form" method="post" action="" enctype="multipart/form-data" id="post1"><!--CREATING A FORM FOR POST-->
+    Post Subject: <input type="text" name="post_subject"><!--INPUT FOR GETTING POST SUBJECT-->
+    Post Main Text: <input type="text" name="post_text"><!--INPUT FOR GETTING THE TEXT-->
+    Post Image: <input type="file" name="userfile" /><!--FILE TO LET USER TO CHOOSE THE FILE-->
+    <input type="submit" name="post" value="Upload" /><!--BUTTON TO SUBMIT THE DETAILS-->
+</form><!--CLOSING THE FORM-->
+</body><!--CLOSING THE BODY ELEMENT-->
+</html><!--CLOSING THE HTML ELEMENT-->
+
+

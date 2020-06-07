@@ -1,0 +1,69 @@
+<!--THIS PHTML FILE IS USED TO SHOW THE ELEMENTS IN THE POST TO THE TABLE WITH IMAGES-->
+
+<style>
+    table, th, td {   /* STYLING THE TABLE*/
+        padding-top: 10px;
+        border: 1px solid purple;    /*CREATING THE BORDER AROUND THE TABLE*/
+        border-collapse: separate;   /*SEPERATING THE BORDERS*/
+        text-align: left;            /*PUTTING THE TEXT ON THE RIF=GHT SIDE*/
+        background-color: whitesmoke;/*SETTING THE BACKGROUND COLOR*/
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #container3{
+        width: 100%;
+    }
+
+    image{
+        width:10%;
+    }
+
+    #search1{
+        height: 100%;
+        margin-bottom: 100px;
+    }
+
+    #post1{
+        text-align: right;
+    }
+</style>
+
+
+<!DOCTYPE html><!--OPENING HTML-->
+<html lang="en">
+<head><!--OPENING THE HEAD ELEMENT-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MENTAL HEALTH</title>  <!--TITLE OF THE PAGE-->
+</head><!--CLOSING THE HEAD ELEMENT-->
+<body onLoad="loadDoc5()" id="tt">
+<script src="../search.js"></script>
+<div id="form1"><!--CREATING AN ID CALLED FORM1 TO HAVE A HOME BUTTON-->
+</div><!--CLOSING THE DIV ID-->
+<h1>POSTS</h1>   <!--USING A HEADER-->
+<div class="container3" id="container3">
+    <div id="menu3" class="col-xs-10 ">
+        <select id="resultsSelectionBox" onchange="showHint2(this.value)"></select>
+        <script src="../search.js"></script>
+  <div id="search1"><!--CREATING DIV ID TO CREATE THE SEARCH PART-->
+  <input type="text" class="form-control input-lg" placeholder="search" id="search" onkeyup="showHint(this.value)"/>
+      <p><span id="txtHint"></span></p>
+  <div id="post1"><!--CREATING DIV ID TO CREATE THE LINK TO POST PART-->
+    <a href="../post.php?pressed=1">To share a post press the link</a><!--CREATING LINK TO POST PHP-->
+  </div><!--CLOSING THE DIV ELEMENT-->
+    </div>
+</div>
+</div>
+<div class="col-sm-10" >
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" ><!--CREATING A NEW FORM-->
+    <table id="table" > <!--CREATING THE TABLE CLASS-->
+        <!--THE VALUES COMING FROM SEARCH.JS-->
+    </table><!--CLOSING THE TABLE-->
+</form><!--CLOSING THE FORM-->
+
+</body><!--CLOSING THE BODY-->
+</html><!--CLOSING THE HTML-->
+

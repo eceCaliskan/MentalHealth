@@ -1,0 +1,53 @@
+<?php require('template/header.phtml');?><!--REQUIRE HEADER IN TEMPLATE DIRECTORY-->
+<!DOCTYPE html><!--STARTING HTML-->
+<html lang="en">
+<head><!--OPENING HEAD ELEMENT-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Bootstrap core CSS -->
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap theme -->
+        <link href="/css/bootstrap-theme.css" rel="stylesheet">
+        <link href="/css/my-style.css" rel="stylesheet">
+        <title>MENTAL HEALTH <?php echo $view->pageTitle ?> </title><!--THE NAME OF THE PAGE-->
+    </head><!--OPENING THE HEAD ELEMENT-->
+</head><!--CLOSING THE HEAD ELEMENT-->
+<body><!--OPENING BODY ELEMENT-->
+
+          <div class="row">
+              <div id="menu" class="col-xs-11 col-sm-12 col-md-1">
+
+                  <ul class="nav navbar_default nav-stacked">
+                      <p2>Welcome to the Mental Health Forum. Please know that you are not alone in your journey. Share your insecurities and fears with millions of people and be someone else's light.</p2>
+                  </ul>
+                  <a href="../bridge.php">Click here to see all the posts</a><!--CREATING A LINK TO FORUM PHP-->
+            </div>
+              <div class="row">
+                  <div id="menu2" class="col-xs-12 col-sm-12 col-md-1">
+              <div id="nav"> <!--STARTING THE DIV ELEMENT-->
+                  <form name="form2" method="post" action="../out.php" > <!--CREATING A FORM -->
+                      <input type="submit" name="sign-out" value="Sign-out"/><!--HAVING A SUBMIT BUTTON WHICH LEADS USER TO OUT.PHP-->
+                  </form><!--CLOSING THE FORM ELEMENT-->
+              </div><!--CLOSING THE DIV ELEMENT-->
+              <div id="nav2"><!--CREATING A NEW DIV ELEMENT-->
+                  <form name="form3" method="post" action="../message2.php" ><!--CREATING A NEW FORM-->
+                      <input type="submit" name="recieve" value="Messages"  ><!--HAVING A SUBMIT BUTTON WHICH LEADS USER TO MESSAGE2.PHP
+           TO RECIEVE THEIR MESSAGES-->
+                  </form><!--CLOSING THE FORM ELEMENT-->
+              </div><!--CLOSING THE DIV ELEMENT-->
+              <div id="nav2"><!--DIV ELEMENT -->
+                  <form name="form3" method="post" action="../watchlist.php" ><!--CREATING A NEW FORM-->
+                      <input type="submit" name="watchlist" value="Watch-List"  ><!--HAVING A SUBMIT BUTTON WHICH LEADS USER TO WATCHLIST.PHP
+          TO SEE THEIR WATCHLIST-->
+                  </form><!--CLOSING THE FORM ELEMENT-->
+  </div><!--CLOSING THE DIV ELEMENT-->
+</body><!--CLOSING THE BODY ELEMENT-->
+
+
+</html><!--CLOSING THE HTML-->
+
+
